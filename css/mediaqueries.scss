@@ -1,0 +1,187 @@
+
+$bcolor:#000;
+$wcolor:#fff;
+
+$phone-portrait: '(max-width: 320px)';
+$phone-landscape: '(max-width: 480px)';
+$tablet-portrait: '(max-width: 767px)';
+$tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
+$large-desktop: '(min-width: 1200px)';
+
+@mixin respond-to($device){
+	@media only screen and #{$device} {
+		@content;
+	}
+}
+
+@include respond-to($phone-landscape){
+	.header{
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    background: $wcolor;
+	    box-shadow: -1px 4px 10px #ddd;
+	    line-height: 20px;
+	    padding: 6px 7px;
+	    z-index: 20;
+		.top-nav{display: none;}
+		.action-bar{
+			border:0;
+			.logo{
+				img {width: 115px;}
+			}
+
+			.col-xs-12{display: none;}
+			.actionbar-wrapper{
+				.sidenav{display: block;}
+				.action-icon{
+					margin-top: 5px;
+				    margin-left: 80px;
+
+				    li:last-child{display: block;}
+				}
+			}
+		}
+		.main-nav{display: none;}
+	}
+
+	.searchbox-mobile{
+		display: block;
+		margin-top: 60px;
+	    padding-right: 10px;
+	    padding-bottom: 10px;
+	    padding-left: 10px;
+	}
+
+	.bestsofa,.bestsell{
+		p {max-width: 420px;}
+		img {height: 200px;}
+	}
+
+	.blog{
+		p {max-width: 420px;}
+		img {height: 245px;}
+	}
+
+	.smartdesign{
+		.hz-row{
+			img {height: 370px;}
+		}
+
+		.vt-row{
+			.vt-row-text{border:0;}
+		}
+	}
+
+	.newsletter{
+		.section-header{
+			h3{
+				font-size: 20px;
+    			line-height: 30px;
+			}
+		}
+
+		.section-content{
+			text-align: center;
+
+			.col-xs-12{
+				margin-bottom: 10px;
+				.form-control{width: 100%}
+			}
+		}
+	}
+
+	.long-footer{
+		.section-content{padding: 0 10px;}
+	}
+
+	footer{
+		.section-content{padding: 0 10px;}
+	}
+}
+
+@include respond-to($phone-portrait){
+	.header{
+		.action-bar{
+			border:0;
+			.logo{
+				img {
+					width: 90px;
+				    margin-top: 3px;
+				}
+			}
+			.actionbar-wrapper{
+				.sidenav{
+					a{font-size: 17px;}
+				}
+				.action-icon{
+					margin-top: 5px;
+				    // margin-left: -110px;
+				    margin-left: -65px;
+
+				    ul{
+				    	li{
+				    		a {font-size: 15px;}
+				    	}
+
+				    	li:last-child{display: inline;}
+				    }
+				}
+			}
+		}
+	}
+
+	.searchbox-mobile{
+		display: block;
+		margin-top: 60px;
+	    padding-right: 10px;
+	    padding-bottom: 10px;
+	    padding-left: 10px;
+	}
+
+	.bestsofa,.bestsell{
+		p {max-width: 420px;}
+		img {height: 200px;}
+	}
+
+	.blog{
+		p {max-width: 420px;}
+		img {height: 245px;}
+	}
+
+	.smartdesign{
+		.hz-row{
+			img {height: 370px;}
+		}
+
+		.vt-row{
+			.vt-row-text{border:0;}
+		}
+	}
+
+	.newsletter{
+		.section-header{
+			h3{
+				font-size: 20px;
+    			line-height: 30px;
+			}
+		}
+
+		.section-content{
+			text-align: center;
+
+			.col-xs-12{
+				margin-bottom: 10px;
+				.form-control{width: 100%}
+			}
+		}
+	}
+
+	.long-footer{
+		.section-content{padding: 0 10px;}
+	}
+
+	footer{
+		.section-content{padding: 0 10px;}
+	}
+}
