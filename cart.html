@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Urban Store</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Owl Carousel Core CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Font Awesome Core CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/icofont.css">
+	<!-- Range Slider Core CSS -->
+	<link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css">
+	<!-- Developer Custom CSS -->
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+<body>
+
+	<!-- Start Project Code  -->
+
+	<div id="menu-sidenav" class="menu-sidenav">
+		<a class="closebtn" onclick="closemenuSidenav()">&times;</a>
+		<div class="sidenav-menu-link">
+			<h5>Shop By</h5>
+			<ul>
+				<li><a href="">home</a></li>
+				<li><a href="">shirt</a></li>
+				<li>
+					<a data-toggle="collapse" href="#second-category">
+						t-shirt <span class="fa fa-angle-right"></span>
+					</a>
+					<div id="second-category" class="collapse">
+						<ul>
+							<li>
+								<a data-toggle="collapse" href="#third-category">
+									NEW T-SHIRT <span class="fa fa-angle-right"></span>
+								</a>
+								<div id="third-category" class="collapse">
+									<ul>
+										<li><a href="#">Normal Shirt</a></li>
+										<li><a href="#">Formal Shirt</a></li>
+										<li><a href="#">Punjabi</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">GONJI STAMP</a></li>
+							<li><a href="#">IDENTITY CRISIS</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><i class="fa fa-shopping-bag"></i> my cart</a></li>
+				<li><a href=""><i class="fa fa-check-circle"></i> checkout</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="sidenav-menu-account">
+			<ul>
+				<li><a href="#">Terms and Condition</a></li>
+				<li><a href="#"><span class="fa fa-user-circle"></span> Reister</a></li>
+				<li><a href="#"><span class="fa fa-sign-in"></span> Login</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="sidenav-menu-social">
+			<ul>
+				<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+				<li><a href="#"><span class="fa fa-instagram"></span></a></li>
+				<li><a href="#"><span class="fa fa-youtube-play"></span></a></li>
+			</ul>
+		</div>
+	</div>
+		
+	<!-- Start Header Section -->
+	<div class="header" id="header">
+		<div class="top-nav">
+			<div class="topnav-wrapper">
+				<ul>
+					<li><a href=""><i class="icofont icofont-phone"></i> 01675963242</a></li>
+					<li><a href=""><i class="fa fa-envelope"></i> info@urban.com</a></li>
+				</ul>
+
+				<ul>
+					<li><a href=""><span>New</span> <sub>Store</sub></a></li>
+					<li><a href="">Designers & Architects</a></li>
+					<li><a href="">Bulk Orders</a></li>
+					<li><a href="">Gift Cards</a></li>
+					<li><a href="">Furniture Exchange</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="action-bar">
+			<div class="actionbar-wrapper">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="sidenav">
+							<a onclick="openmenuSidenav()">
+				    			<i class="fa fa-bars"></i>
+				    		</a>
+						</div>
+
+						<div class="logo">
+							<a href="">
+								<img src="images/mainlogo.png" alt="Logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+						<div class="searchbox">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search">
+								<div class="input-group-addon">
+									<button type="submit">
+										<i class="icofont icofont-search-alt-1"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-9">
+						<div class="action-icon">
+							<ul>
+								<li><a href=""><i class="fa fa-truck"></i></a></li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown">
+										<i class="icofont icofont-user-alt-7"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Login</a></li>
+										<li><a href="">Sign Up</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href=""><i class="fa fa-shopping-cart"></i></a>
+									<span>1</span>
+								</li>
+								<li>
+									<a href=""><i class="icofont icofont-search-alt-1"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="main-nav">
+			<div class="mainnav-wrapper">
+				<ul>
+					<li class="dropdown large-dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown"><span class="link-hover">sale</span></a>
+						<ul class="dropdown-menu large-dropdown-menu">
+
+							<li class="col-lg-3 col-md-3 col-sm-3">
+								<ul>
+									<li><h5 class="submenu-header">promotions</h5></li>
+									<ul class="submenu-list">
+										<li><a href="">Sofas On Discount</a></li>
+										<li><a href="">Buyback Guarantee</a></li>
+										<li><a href="">Deals of the Week</a></li>
+										<li><a href="">Clearance Sale</a></li>
+										<li><a href="">Back in Stock</a></li>
+									</ul>
+								</ul>
+							</li>
+
+							<li class="col-lg-3 col-md-3 col-sm-3">
+								<ul>
+									<li><h5 class="submenu-header">exchange</h5></li>
+									<ul class="submenu-list">
+										<li><a href="">Exchange Your Old Furniture</a></li>
+									</ul>
+								</ul>
+							</li>
+
+							<li class="col-lg-3 col-md-3 col-sm-3">
+								<ul>
+									<li><h5 class="submenu-header">promotions</h5></li>
+									<ul class="submenu-list">
+										<li><a href="">Sofas On Discount</a></li>
+										<li><a href="">Buyback Guarantee</a></li>
+										<li><a href="">Deals of the Week</a></li>
+										<li><a href="">Clearance Sale</a></li>
+										<li><a href="">Back in Stock</a></li>
+									</ul>
+								</ul>
+							</li>
+
+							<li class="col-lg-3 col-md-3 col-sm-3">
+								<ul>
+									<li><h5 class="submenu-header">exchange</h5></li>
+									<ul class="submenu-list">
+										<li><a href="">Exchange Your Old Furniture</a></li>
+									</ul>
+								</ul>
+							</li>
+
+						</ul>
+					</li>
+					<li><a href=""><span class="link-hover">living</span></a></li>
+					<li><a href=""><span class="link-hover">bedroom</span></a></li>
+					<li><a href=""><span class="link-hover">dining</span></a></li>
+					<li><a href=""><span class="link-hover">storage</span></a></li>
+					<li><a href=""><span class="link-hover">study</span></a></li>
+					<li><a href=""><span class="link-hover">mattresses</span></a></li>
+					<li><a href=""><span class="link-hover">interiors</span></a></li>
+					<li><a href=""><span class="link-hover">decor</span></a></li>
+					<li><a href=""><span class="link-hover">collections</span></a></li>
+					<li><a href=""><span class="link-hover">new</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- End Header Section -->
+
+	<div class="searchbox-mobile">
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Search">
+			<div class="input-group-addon">
+				<button type="submit">
+					<i class="icofont icofont-search-alt-1"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Start Shopping Cart Section -->
+	<section class="shopping-cart section-padding">
+		<div class="section-content">
+			<h5>SHOPPING-CART SUMMARY</h5>
+			<p>Your shopping cart contains: 1 product</p>
+
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<td>Product</td>
+							<td>Description</td>
+							<td>Availability</td>
+							<td>Quantity</td>
+							<td></td>
+							<td>Total</td>
+						</tr>
+					</thead>
+					<tbody>
+						<form action="#">
+							<tr>
+								<td>
+									<img class="img-responsive" src="https://ul-a.akamaihd.net/images/products/53399/mini/Altura_Coffee_Table_Two_Tone_00_LP.jpg?1462882933">
+								</td>
+								<td>
+									<a href="#">Product Title</a>
+									<p><small>Product Code</small></p>
+								</td>
+								<td>In Stock</td>
+								<td>
+									
+									<input class="form-control" type="number" min="0" value="1" step="1">
+									
+								</td>
+								<td>
+									<span>
+										<a href="#"><i class="fa fa-refresh"></i></a>
+									</span>
+									<span>
+										<a href="#"><i class="fa fa-trash-o"></i></a>
+									</span>
+								</td>
+								<td>BDT 500</td>
+							</tr>
+						</form> 
+					</tbody>
+				</table>
+			</div>
+
+			<div class="shopping-cart-footer">
+
+				<div class="payment">
+					<img src="images/payment.png" alt="">
+				</div>
+				
+				<div class="shopping-total">
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr>
+								<td><b>Total</b></td>
+								<td><b>500.00</b></td>
+								</tr>
+								<tr>
+								<td><b>Subtotal</b></td>
+								<td><b>500.00</b></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="shopping-button">
+						<a class="btn btn-theme" href="#">
+							Continiue <i class="fa fa-shopping-cart"></i>
+						</a>
+						<a class="btn btn-theme" href="#">
+							Checkout <i class="fa fa-check-circle-o"></i>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Shopping Cart Section -->
+
+	<!-- Start Newsletter Section -->
+	<section class="newsletter section-padding">
+		<div class="section-header">
+			<h3>SIGN UP AND GET A CHANCE TO WIN THE GIVEAWAY OF THE WEEK.</h3>
+		</div>
+
+		<div class="section-content">
+			<form class="form-inline" action="/action_page.php">
+				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+					<input type="email" class="form-control" id="email" placeholder="Your Email ID">
+				</div>
+
+				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+					<button type="submit" class="btn-theme">SUBSCRIBE</button>
+				</div>			  
+			</form>
+		</div>
+	</section>
+	<!-- End Newsletter Section -->
+
+
+	<!-- Start Long Footer Section -->
+	<section class="long-footer">
+		<div class="section-content">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+					<h5>my account</h5>
+					<div class="footer-style"></div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<ul>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<ul>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+					<h5>information</h5>
+					<div class="footer-style"></div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<ul>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<ul>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+					<h5>explore more</h5>
+					<div class="footer-style"></div>
+					<ul>
+						<li><a href="">link here</a></li>
+						<li><a href="">link here</a></li>
+						<li><a href="">link here</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+					<h5>Registered Address</h5>
+					<div class="footer-style"></div>
+					<a href="">Cilory.com</a>
+					<p>
+						Dew Solutions Pvt Ltd <br>
+						1017, JMD Megapolis, 10th Floor <br>
+						Sohna Road, Sector 48 <br>
+						Gurgaon -122018 <br>
+						India.<br>
+						Tel: 0124 4745 777<br>
+						(9 am - 8 pm Mon-Sat)<br>
+						cs@cilory.com
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<h5>connect with us</h5>
+					<div class="footer-style"></div>
+
+					<div class="social">
+						<ul>
+							<li>
+							
+								<a href="#" class="face"><i class="fa fa-facebook"></i></a>
+							
+								<a href="#" class="twit"><i class="fa fa-twitter"></i></a>
+							
+								<a href="#" class="tube"><i class="fa fa-youtube-play"></i></a>
+							
+								<a href="#" class="drib"><i class="fa fa-dribbble"></i></a>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<h5>download app</h5>
+					<div class="footer-style"></div>
+					<div class="download-app">
+						<a href="">
+							<img src="https://ul-a.akamaihd.net/media/badges/app_store/app_store_badge.svg" alt="">
+						</a>
+						<a href="">
+							<img src="https://ul-a.akamaihd.net/media/badges/play_store/google-play-badge.png" style="width: 137px;" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Long Footer Section -->
+
+	<!-- Start Footer Section -->
+	<footer>
+		<div class="section-content">
+			<div class="delivery-place">
+				<h5>delivery place</h5>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a>
+			</div>
+			<p>
+				&copy; 2018 Cilory | Powered by
+				<a href="https://www.storrea.com/" target="_blank">Storrea</a>
+			</p>
+		</div>
+	</footer>
+	<!-- End Footer Section -->
+
+	<!-- End Project Code  -->
+
+	<!-- Your Needed JavaScript Library Here -->
+
+	<!-- JQuery Core JS -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- Bootstrap Core JS -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Owl Carousel Core JS -->
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<!-- Range Slider Core JS -->
+	<script type="text/javascript" src="js/ion.rangeSlider.js"></script>
+	<!-- ElevateZoom Core JS -->
+	<script type="text/javascript" src="js/elevateZoom.min.js"></script>
+	<!-- Developer Custom JS -->
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- End of All JavaScript Library -->
+</body>
+</html>

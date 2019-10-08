@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Oikko</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Site Icon Core CSS -->
+	<link rel="stylesheet" href="css/icofont.css">
+	<!-- Developer Custom CSS -->
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+<body>
+
+	<!-- Start Project Code  -->
+
+	<!-- Start Header Section -->
+	<div class="header" id="header">
+		<div class="top-nav">
+			<div class="container">
+				<ul>
+					<li><a href="">my account</a></li>
+					<li><a href="">wishlist</a></li>
+					<li><a href="">checkout</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="action-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="sidenav">
+							<a onclick="openmenuSidenav()">
+				    			<i class="fa fa-bars"></i>
+				    		</a>
+						</div>
+
+						<div class="logo">
+							<a href="">
+								<img class="img-responsive" src="images/oikko-logo.png" alt="Logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+						<div class="searchbox">
+							<div class="input-group">
+								<div class="input-group-addon">
+									<button type="submit">
+										<i class="icofont-search-1"></i>
+									</button>
+								</div>
+								<input type="text" class="form-control" placeholder="Search for anything.......">
+								<div class="input-group-addon">
+									<button type="submit" style="color: #fff">Go</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-9">
+						<div class="action-icon">
+							<ul>
+								<li>
+									<div class="cart-icon">
+										<a href=""><i class="icofont-cart-alt"></i></a>
+										<span>1</span>
+									</div>
+									
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="main-nav dropdown large-dropdown">
+			<div class="mainnav-wrapper">
+				<ul>
+					<li class="">
+						<a class="dropdown-toggle" data-toggle="dropdown"><span class="link-hover">sale</span></a>
+					</li>
+					<li><a href=""><span class="link-hover">living</span></a></li>
+					<li><a href=""><span class="link-hover">bedroom</span></a></li>
+					<li><a href=""><span class="link-hover">dining</span></a></li>
+					<li><a href=""><span class="link-hover">storage</span></a></li>
+					<li><a href=""><span class="link-hover">study</span></a></li>
+					<li><a href=""><span class="link-hover">mattresses</span></a></li>
+					<li><a href=""><span class="link-hover">interiors</span></a></li>
+					<li><a href=""><span class="link-hover">decor</span></a></li>
+					<li><a href=""><span class="link-hover">collections</span></a></li>
+					<li><a href=""><span class="link-hover">new</span></a></li>
+				</ul>
+			</div>
+			<ul class="dropdown-menu large-dropdown-menu">
+					<li class="col-lg-3 col-md-3 col-sm-3">
+						<ul>
+							<li><h5 class="submenu-header">promotions</h5></li>
+							<ul class="submenu-list">
+								<li><a href="">Sofas On Discount</a></li>
+								<li><a href="">Buyback Guarantee</a></li>
+								<li><a href="">Deals of the Week</a></li>
+								<li><a href="">Clearance Sale</a></li>
+								<li><a href="">Back in Stock</a></li>
+							</ul>
+						</ul>
+					</li>
+
+					<li class="col-lg-3 col-md-3 col-sm-3">
+						<ul>
+							<li><h5 class="submenu-header">exchange</h5></li>
+							<ul class="submenu-list">
+								<li><a href="">Exchange Your Old Furniture</a></li>
+							</ul>
+						</ul>
+					</li>
+
+					<li class="col-lg-3 col-md-3 col-sm-3">
+						<ul>
+							<li><h5 class="submenu-header">promotions</h5></li>
+							<ul class="submenu-list">
+								<li><a href="">Sofas On Discount</a></li>
+								<li><a href="">Buyback Guarantee</a></li>
+								<li><a href="">Deals of the Week</a></li>
+								<li><a href="">Clearance Sale</a></li>
+								<li><a href="">Back in Stock</a></li>
+							</ul>
+						</ul>
+					</li>
+
+					<li class="col-lg-3 col-md-3 col-sm-3">
+						<ul>
+							<li><h5 class="submenu-header">exchange</h5></li>
+							<ul class="submenu-list">
+								<li><a href="">Exchange Your Old Furniture</a></li>
+							</ul>
+						</ul>
+					</li>
+			</ul>
+		</div>
+	</div>
+	<!-- End Header Section -->
+
+	<div class="searchbox-mobile">
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Search">
+			<div class="input-group-addon">
+				<button type="submit">
+					<i class="icofont icofont-search-alt-1"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start Home Slider Section -->
+	<!-- <section class="homeslider">
+		<div id="homeSlider" class="carousel slide" data-ride="carousel">
+			<!-- Indicators --
+			<ol class="carousel-indicators">
+				<li data-target="#homeSlider" data-slide-to="0" class="active"></li>
+				<li data-target="#homeSlider" data-slide-to="1"></li>
+				<li data-target="#homeSlider" data-slide-to="2"></li>
+				<li data-target="#homeSlider" data-slide-to="3"></li>
+				<li data-target="#homeSlider" data-slide-to="4"></li>
+			</ol>
+			
+			<!-- Wrapper for slides --
+			<div class="carousel-inner">
+				<div class="item active">
+					<a href="">
+						<img class="img-responsive" src="https://wallpaperscraft.com/image/room_furniture_style_interior_design_66307_1920x1080.jpg" alt="slider">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="">
+						<img class="img-responsive" src="http://buildbetterschools.info/wp-content/uploads/2018/04/phenomenal-furniture-design-to-make-rooms-look-bigger-ideas-small-room.jpg" alt="slider">
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="">
+						<img class="img-responsive" src="http://www.dequalita.com/images/bedroom1.jpg" alt="slider">
+					</a>
+				</div>
+
+				<div class="item">
+					<a href="">
+						<img class="img-responsive" src="http://mgcsm.org/wp-content/uploads/2017/12/home-designer-furniture-inspirational-inside-home-design-hd-with-ideas-of-home-designer-furniture.jpg" alt="slider">
+					</a>
+				</div>
+
+				<div class="item">
+					<a href="">
+						<img class="img-responsive" src="http://interstil.dk/wp-content/uploads/2017/09/landing-store.jpg" alt="slider">
+					</a>
+				</div>
+			</div>
+			
+			<!-- Left and right controls --
+			<a class="left carousel-control" href="#homeSlider" data-slide="prev">
+				<i class="fa fa-angle-left fa-3x"></i>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#homeSlider" data-slide="next">
+				<i class="fa fa-angle-right fa-3x"></i>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section> -->
+	<!-- End Home Slider Section -->
+
+	<!-- Start Category Section -->
+	<section class="category section-padding">
+		<div class="section-header">
+			<h2>Explore Our Furniture Range</h2>
+			<div class="header-style"></div>
+		</div>
+		<div class="section-content">
+			<!-- First Row -->
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn0.iconfinder.com/data/icons/furniture-line/2048/1874_-_Double_Sofa-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn1.iconfinder.com/data/icons/travel-118/32/travel-06-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn3.iconfinder.com/data/icons/hotel-and-restaurant-vector-line-3/128/122-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn3.iconfinder.com/data/icons/furniture-114/100/Furniture_house_interiors_decorating_home-07-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn2.iconfinder.com/data/icons/education-thin-line/614/1055_-_Study_Table-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn2.iconfinder.com/data/icons/home-appliances-furnitures/100/lamp-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Second Row -->
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn0.iconfinder.com/data/icons/furniture-line/2048/1874_-_Double_Sofa-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn1.iconfinder.com/data/icons/travel-118/32/travel-06-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn3.iconfinder.com/data/icons/hotel-and-restaurant-vector-line-3/128/122-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn3.iconfinder.com/data/icons/furniture-114/100/Furniture_house_interiors_decorating_home-07-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn2.iconfinder.com/data/icons/education-thin-line/614/1055_-_Study_Table-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+					<div class="category-box">
+						<a href="">
+							<img class="img-responsive" src="https://cdn2.iconfinder.com/data/icons/home-appliances-furnitures/100/lamp-64.png" alt="category">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Start Category Section -->
+
+	<!-- Start Smart design Section -->
+	<section class="smartdesign section-padding">
+		<div class="section-header">
+			<h2>Smart Study Designs</h2>
+			<div class="header-style"></div>
+		</div>
+		<div class="section-content">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+					<div class="hz-row">
+						<a href="">
+							<img src="https://ul-a.akamaihd.net/media/collections/listing/In_The_Spotlight_-_Main.jpg?1521697894" class="img-responsive" alt="Image Size 650x500">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="vt-row">
+						<div class="vt-row-photo">
+							<a href="">
+								<img src="https://ul-a.akamaihd.net/media/collections/listing/In_The_Spotlight_-_Small.jpg?1521697901" class="img-responsive zoomIn" alt="Image Size 310x200">
+							</a>
+						</div>
+
+						<div class="vt-row-text">
+							<h2>Pulling An All-Nighter?</h2>
+							<p>Ouch...that's never pretty. But the good news? You can count on these ergonomic study designs to make hard work a little easier.</p>
+							<a class="btn-theme" href="">explore now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Start Smart Design Section -->
+
+	<!-- Start Blog Section -->
+	<section class="blog section-padding">
+		<div class="section-header">
+			<h2>From Our Pages</h2>
+			<div class="header-style"></div>
+		</div>
+		<div class="section-content">
+			<h5>THE BEST OF OUR BLOG, HANDPICKED FOR YOU.</h5>
+			<p>Ideas and inspiration to help you create a space that's warmly, uniquely yours.</p>
+			<a href="">
+				<img src="https://ul-a.akamaihd.net/media/collections/listing/Blog_-_2x-25012018.jpg?1516860567" class="img-responsive" alt="Image Size 1980x800">
+			</a>
+		</div>
+	</section>
+	<!-- Start Blog Section -->
+	
+	<!-- Start Client Section -->
+	<!-- <section class="client section-padding">
+		<div class="section-header">
+			<h2>Customer Stories</h2>
+			<div class="header-style"></div>
+		</div>
+
+		<div class="section-content">
+			<div class="owl-carousel owl-theme homeProduct" id="client">
+
+				<div class="client-box">
+					<div class="client-photo">
+						<img src="images/sayed.jpg" class="" alt="Image Size 293x293">			
+					</div>
+					<div class="client-name">
+						<h5>Md.Abu Sayed</h5>
+					</div>
+					<div class="platform">
+						<a href="">Via Facebook</a> 
+					</div>
+
+					<div class="product-photo">
+						<a href="">
+							<img src="https://ul-a.akamaihd.net/images/products/142538/product/Barnley_Single_Queen_Storage_Bunk_Bed_LP.jpg?1488437718" class="img-responsive" alt="Image Size 293x293">
+						</a>
+					</div>
+					<div class="product-name">
+						<h5>product name</h5>
+					</div>
+					<div class="product-button">
+						<a class="btn-theme" href="">view product</a>
+					</div>
+					<div class="client-text">
+						<p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolore magna aliqua. <i class="fa fa-quote-right"></i></p>
+					</div>
+				</div>
+
+				<div class="client-box">
+					<div class="client-photo">
+						<img src="images/sayed.jpg" class="" alt="Image Size 293x293">			
+					</div>
+					<div class="client-name">
+						<h5>Md.Abu Sayed</h5>
+					</div>
+					<div class="platform">
+						<a href="">Via Facebook</a> 
+					</div>
+
+					<div class="product-photo">
+						<a href="">
+							<img src="https://ul-a.akamaihd.net/images/products/142538/product/Barnley_Single_Queen_Storage_Bunk_Bed_LP.jpg?1488437718" class="img-responsive" alt="Image Size 293x293">
+						</a>
+					</div>
+					<div class="product-name">
+						<h5>product name</h5>
+					</div>
+					<div class="product-button">
+						<a class="btn-theme" href="">view product</a>
+					</div>
+					<div class="client-text">
+						<p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolore magna aliqua. <i class="fa fa-quote-right"></i></p>
+					</div>
+				</div>
+
+				<div class="client-box">
+					<div class="client-photo">
+						<img src="images/sayed.jpg" class="" alt="Image Size 293x293">			
+					</div>
+					<div class="client-name">
+						<h5>Md.Abu Sayed</h5>
+					</div>
+					<div class="platform">
+						<a href="">Via Facebook</a> 
+					</div>
+
+					<div class="product-photo">
+						<a href="">
+							<img src="https://ul-a.akamaihd.net/images/products/142538/product/Barnley_Single_Queen_Storage_Bunk_Bed_LP.jpg?1488437718" class="img-responsive" alt="Image Size 293x293">
+						</a>
+					</div>
+					<div class="product-name">
+						<h5>product name</h5>
+					</div>
+					<div class="product-button">
+						<a class="btn-theme" href="">view product</a>
+					</div>
+					<div class="client-text">
+						<p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolore magna aliqua. <i class="fa fa-quote-right"></i></p>
+					</div>
+				</div>
+
+				<div class="client-box">
+					<div class="client-photo">
+						<img src="images/sayed.jpg" class="" alt="Image Size 293x293">			
+					</div>
+					<div class="client-name">
+						<h5>Md.Abu Sayed</h5>
+					</div>
+					<div class="platform">
+						<a href="">Via Facebook</a> 
+					</div>
+
+					<div class="product-photo">
+						<a href="">
+							<img src="https://ul-a.akamaihd.net/images/products/142538/product/Barnley_Single_Queen_Storage_Bunk_Bed_LP.jpg?1488437718" class="img-responsive" alt="Image Size 293x293">
+						</a>
+					</div>
+					<div class="product-name">
+						<h5>product name</h5>
+					</div>
+					<div class="product-button">
+						<a class="btn-theme" href="">view product</a>
+					</div>
+					<div class="client-text">
+						<p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolore magna aliqua. <i class="fa fa-quote-right"></i></p>
+					</div>
+				</div>
+
+				<div class="client-box">
+					<div class="client-photo">
+						<img src="images/sayed.jpg" class="" alt="Image Size 293x293">			
+					</div>
+					<div class="client-name">
+						<h5>Md.Abu Sayed</h5>
+					</div>
+					<div class="platform">
+						<a href="">Via Facebook</a> 
+					</div>
+
+					<div class="product-photo">
+						<a href="">
+							<img src="https://ul-a.akamaihd.net/images/products/142538/product/Barnley_Single_Queen_Storage_Bunk_Bed_LP.jpg?1488437718" class="img-responsive" alt="Image Size 293x293">
+						</a>
+					</div>
+					<div class="product-name">
+						<h5>product name</h5>
+					</div>
+					<div class="product-button">
+						<a class="btn-theme" href="">view product</a>
+					</div>
+					<div class="client-text">
+						<p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolore magna aliqua. <i class="fa fa-quote-right"></i></p>
+					</div>
+				</div>
+
+				<div class="client-box">
+					<div class="client-photo">
+						<img src="images/sayed.jpg" class="" alt="Image Size 293x293">			
+					</div>
+					<div class="client-name">
+						<h5>Md.Abu Sayed</h5>
+					</div>
+					<div class="platform">
+						<a href="">Via Facebook</a> 
+					</div>
+
+					<div class="product-photo">
+						<a href="">
+							<img src="https://ul-a.akamaihd.net/images/products/142538/product/Barnley_Single_Queen_Storage_Bunk_Bed_LP.jpg?1488437718" class="img-responsive" alt="Image Size 293x293">
+						</a>
+					</div>
+					<div class="product-name">
+						<h5>product name</h5>
+					</div>
+					<div class="product-button">
+						<a class="btn-theme" href="">view product</a>
+					</div>
+					<div class="client-text">
+						<p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolore magna aliqua. <i class="fa fa-quote-right"></i></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section> -->
+	<!-- End Client Section -->
+
+	<!-- Start Home Text Section -->
+	<section class="home-text section-padding">
+		<div class="section-header">
+			<h2>Furniture Online Store-Urban Ladder</h2>
+		</div>
+		<div class="section-content">
+			<div class="info-text">
+				
+				<h2>Cilory - The Fashion Hub</h2>
+				<p>Cilory is a premium platform for Online dress shopping. At Cilory, we are dedicated 
+				to offer stylish, trendy and reliable products. We offer shopping that is light on your 
+				pockets, the Shopping that offers your favourite brands and more, the Shopping that is 
+				simpler, easier, faster and matches your needs.
+				<br> Cilory offers a wide variety of products ranging from Ladies Kurtis, Tops, Fashion 
+				Jewellery, branded Lingerie, Handbags and Nightwear to Men's Underwear & Vests and Sexual
+				Well Being. Providing a huge variety of products ranging from personal care to fashion 
+				clothing and fashion jewellery, Cilory makes online shopping a memorable experience for 
+				everybody.</p>
+
+				<h2>Something for all Genders and Ages</h2>
+				<p>At Cilory, we provide diverse buying options that match the needs of customers
+				from all genders , ages and cultures. Whether you are a teenage girl looking for 
+				trendy fashion jewellery, a college going boy looking for cool and funky T-Shirts, 
+				an executive looking for formal office wear shirts or a woman looking for a place 
+				to buy lingerie with confidence and choice, Cilory is the place for you. Men &
+				Women can buy underwear online, buy designer handbags as well as do online dress 
+				shopping. We are continuously working towards adding more products and categories 
+				to match your taste and fashion needs.</p>
+
+				<h2>Synonym of Fashion and Style</h2>
+				<p>Cilory brings to everyone the choicest collection of Fashion Jewellery, branded 
+				Lingerie, Handbags, Clubwear and more. You can explore big brands like Triumph, 
+				Lovable, Calvin Klein, Arrow, Archies, Adidas, Bombay Dyeing, Lacoste, Biba and 
+				many more. While you take the best, we keep hunting for latest designs and styles 
+				to enrich your shopping experience and keep you exposed to the best in lifestyle 
+				and fashion.</p>
+
+				<h2>Dedicated to Brings Smiles</h2>
+				<p>At Cilory, we are dedicated to provide the best of online shopping experience to 
+				our customers. We have a dedicated team to handle customer queries both on phone as 
+				well as on chat. Our mission is to bring smiles to the face of every individual who 
+				shops at Cilory.You choose a product and we deliver it right at your address across 
+				India within 3-5 business days. For those who are not comfortable using paying online, 
+				we offer a Cash-On-Deliver option while for those having second thoughts after purchase, 
+				we have in place a 30-day return option as well.</p>
+
+				<h2>Cilory - the 24x7 Online Fashion and Lifestyle Shop</h2>
+				<p>At Cilory, we have almost everything to light up your fashion buds. From 
+				extensive range of men's shirts to exotic dresses for women to stylish 
+				lingerie & accessories for everyone, we offer diversity of choices under 
+				one umbrella. We value our customers and their feedbacks and continuously 
+				work towards improving your shopping experience. Do write to us at cs [at] 
+				cilory.com or call us at 0124-4745-777 for any queries/feedbacks/suggestions 
+				or for any help in placing an order with us.</p>	
+			</div>
+		</div>
+	</section>
+	<!-- Start Home Text Section -->
+
+	<!-- Start Newsletter Section -->
+	<section class="newsletter section-padding">
+		<div class="section-header">
+			<h3>SIGN UP AND GET A CHANCE TO WIN THE GIVEAWAY OF THE WEEK.</h3>
+		</div>
+
+		<div class="section-content">
+			<form class="form-inline" action="/action_page.php">
+				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+					<input type="email" class="form-control" id="email" placeholder="Your Email ID">
+				</div>
+
+				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+					<button type="submit" class="btn-theme">SUBSCRIBE</button>
+				</div>			  
+			</form>
+		</div>
+	</section>
+	<!-- End Newsletter Section -->
+
+	<!-- Start Long Footer Section -->
+	<section class="long-footer">
+		<div class="section-content">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+					<h5>my account</h5>
+					<div class="footer-style"></div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<ul>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<ul>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+					<h5>information</h5>
+					<div class="footer-style"></div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<ul>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<ul>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+								<li><a href="">link here</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+					<h5>explore more</h5>
+					<div class="footer-style"></div>
+					<ul>
+						<li><a href="">link here</a></li>
+						<li><a href="">link here</a></li>
+						<li><a href="">link here</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+					<h5>Registered Address</h5>
+					<div class="footer-style"></div>
+					<a href="">Cilory.com</a>
+					<p>
+						Dew Solutions Pvt Ltd <br>
+						1017, JMD Megapolis, 10th Floor <br>
+						Sohna Road, Sector 48 <br>
+						Gurgaon -122018 <br>
+						India.<br>
+						Tel: 0124 4745 777<br>
+						(9 am - 8 pm Mon-Sat)<br>
+						cs@cilory.com
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<h5>connect with us</h5>
+					<div class="footer-style"></div>
+
+					<div class="social">
+						<ul>
+							<li>
+							
+								<a href="#" class="face"><i class="fa fa-facebook"></i></a>
+							
+								<a href="#" class="twit"><i class="fa fa-twitter"></i></a>
+							
+								<a href="#" class="tube"><i class="fa fa-youtube-play"></i></a>
+							
+								<a href="#" class="drib"><i class="fa fa-dribbble"></i></a>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<h5>download app</h5>
+					<div class="footer-style"></div>
+					<div class="download-app">
+						<a href="">
+							<img src="https://ul-a.akamaihd.net/media/badges/app_store/app_store_badge.svg" alt="">
+						</a>
+						<a href="">
+							<img src="https://ul-a.akamaihd.net/media/badges/play_store/google-play-badge.png" style="width: 137px;" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Long Footer Section -->
+
+	<!-- Start Footer Section -->
+	<footer>
+		<div class="section-content">
+			<div class="delivery-place">
+				<h5>delivery place</h5>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
+				<a href="">link name</a><a href="">link name</a>
+			</div>
+			<p>
+				&copy; 2018 Cilory | Powered by
+				<a href="https://www.storrea.com/" target="_blank">Storrea</a>
+			</p>
+		</div>
+	</footer>
+	<!-- End Footer Section -->
+
+	<!-- End Project Code  -->
+
+	<!-- Your Needed JavaScript Library Here -->
+
+	<!-- JQuery Core JS -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- Bootstrap Core JS -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- ElevateZoom Core JS -->
+	<script type="text/javascript" src="js/elevateZoom.min.js"></script>
+	<!-- Developer Custom JS -->
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- End of All JavaScript Library -->
+</body>
+</html>
