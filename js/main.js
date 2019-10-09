@@ -33,17 +33,62 @@ $(document).ready(function() {
 
 
   /*
-   *---------------------------------------------
-   *-------------OwlCarousel/Product--------------
-   *---------------------------------------------
-   */
+    * ----------------------------------------------
+    *-----------------Vegas Slider------------------
+    * ----------------------------------------------
+  */
+      
+  var slider = $("#homeslider");
+  slider.vegas({
+    overlay: false,
+    cover:true,
+    transition: 'fade',
+    transitionDuration: 4000,
+    delay: 10000,
+    timer:true,
+    animation: 'random',
+    animationDuration: 20000,
+    slides: [
+      {
+        src: 'https://placehold.jp/cccccc/8c8c8c/1920x500.png?text=slider-1'
+      },
+      {
+        src: 'https://placehold.jp/cccccc/8c8c8c/1920x500.png?text=slider-2'
+      },
+      {
+        src: 'https://placehold.jp/cccccc/8c8c8c/1920x500.png?text=slider-3'
+      },
+      {
+        src: 'https://placehold.jp/cccccc/8c8c8c/1920x500.png?text=slider-4'
+      },
+      {
+        src: 'https://placehold.jp/cccccc/8c8c8c/1920x500.png?text=slider-5'
+      },
+      {
+        src: 'https://placehold.jp/cccccc/8c8c8c/1920x500.png?text=slider-6'
+      },
+      {
+        src: 'https://placehold.jp/cccccc/8c8c8c/1920x500.png?text=slider-7'
+      },
+      {
+        src: 'https://placehold.jp/cccccc/8c8c8c/1920x500.png?text=slider-8'
+      },
+      {
+        src: 'https://placehold.jp/cccccc/8c8c8c/1920x500.png?text=slider-9'
+      },
+      {
+        src: 'https://placehold.jp/cccccc/8c8c8c/1920x500.png?text=slider-10'
+      }
+    ]
+  });
 
+  $('a.previous').on('click', function () {
+    $("#homeslider").vegas('options', 'transition', 'fade').vegas('previous');
+  });
 
-   /*
-   *---------------------------------------------
-   *----------------Price Slide-----------------
-   *---------------------------------------------
-   */
+  $('a.next').on('click', function () {
+    $("#homeslider").vegas('options', 'transition', 'fade').vegas('next');
+  });
 
 
   /*
