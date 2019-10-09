@@ -1,12 +1,12 @@
 
 // Custom Fonts
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap');
 
-$theme-font:"Lato", sans-serif;
-$brand-color:#113745;
+$theme-font: 'Lora', serif;;
+$brand-color: #113745;
 // $brand-color:#ED7745;
-$bcolor:#000;
-$wcolor:#fff;
+$bcolor: #000;
+$wcolor: #fff;
 
 @mixin scale ($svalue) {
   @include transform(scale($svalue));
@@ -63,20 +63,6 @@ a:hover, a:visited, a:focus {
 .zoomIn:hover{
 	@include scale(1.2);
 	@include transition(all,0.8s,ease);
-}
-
-
-.review-btn span.stars, span.stars span,
-.product-review span.stars, span.stars span{
-    display: block;
-    background: url("../images/stars.png") 0 -16px repeat-x;
-    width: 80px;
-    height: 16px;
-}
-
-.review-btn span.stars span,
-.product-review span.stars span{
-    background-position: 0 0;
 }
 
 
@@ -320,7 +306,7 @@ a:hover, a:visited, a:focus {
 		    				font-size: 23px;
 
 						    &:hover{
-				    	    	color: $brand-color;
+				    	    	color: $wcolor;
 				    	    	@include transition(all,.6s,ease);
 				    	    }
 		    			}
@@ -344,10 +330,10 @@ a:hover, a:visited, a:focus {
     }
 
     .main-nav{
+    	height: 50px;
     	background:$wcolor;
 		border-bottom: 1px solid #eee;
-		height: 42px;
-    	line-height: 35px;
+	    padding: 15px 0;
     	.mainnav-wrapper{
     		text-align: center;
 
@@ -358,6 +344,7 @@ a:hover, a:visited, a:focus {
 
 	    		li{
     			    display: inline-block;
+    			    margin-right: 30px;
 
     			    a{
     			    	color:$bcolor;
@@ -365,51 +352,93 @@ a:hover, a:visited, a:focus {
 		    	        padding-right: 25px;
 			    	    text-transform: uppercase;
 
+			    	    .link-hover{
+			    	    	width: 0;
+						    height: 1px;
+						    display: block;
+						    background: #000;
+			    	    }
+
 			    	    &:hover{
 			    	    	color:$brand-color;
 			    	    	@include transition(all,.3s,ease);
-
 			    	    	.link-hover{
-				    	    	border-bottom: 1px solid $brand-color;
-	    						padding-bottom: 14px;
-				    	    }
+			    	    		width: 100%;
+			    	    		@include transition(all,.5s,ease);
+			    	    	}
 			    	    }
     			    }
 	    		}
-
-	    		li:last-child{
-	    			a{padding-right:0;}
-	    		}
 	    	}
+
+	    	.mega-dropdown{
+		    	.mega-dropdown-content{
+					width: 100%;
+					position: absolute;
+					left: 0;
+				    top: 210px;
+				    background: #f7f7f7;
+				    border: 1px solid #f7f7f7;
+				    border-radius: 0;
+				    box-shadow: none;
+			        padding: 15px 0;
+				    text-align: left;
+				    @include transition(all,.6s,ease);
+				    visibility: hidden;
+				    z-index: 100;
+
+				    .submenu-header{
+				    	font-size: 16px;
+					    font-weight: 900;
+					    text-transform: uppercase;
+				    }
+
+				    .submenu-list{
+			    	    li{
+			    	    	display: block;
+			    	    	margin-bottom: 10px;
+			    	    	a{
+			    	    		color: #3c3c3c;
+			    	    		text-transform: capitalize;
+			    	    	}
+			    	    }
+				    }
+				}
+
+				&:hover{
+					.mega-dropdown-content{
+						top: 190px;
+					    visibility: visible;
+					}
+	    	    }
+			}
+    	}
+
+    	.icons{
+    		position: absolute;
+		    right: 30px;
+		    top: 0;
+    		opacity: 0;
+    		visibility: hidden;
+
+    		ul{
+    			li{
+    				height: 50px;
+    				border-left: 1px solid #ddd;
+				    display: table-cell;
+				    padding: 0 20px;
+				    vertical-align: middle;
+    				a{
+    					font-size: 20px;
+    					padding-right: 0;
+    				}
+    			}
+
+    			li:last-child{border-right: 1px solid #ddd;}
+    		}
     	}
 
     }
-
-    .large-dropdown{
-		.large-dropdown-menu{
-			width: 100%;
-		    top: 60px;
-		    background: #f7f7f7;
-		    border: 1px solid #f7f7f7;
-		    border-radius: 0;
-		    box-shadow: none;
-
-		    .submenu-header{
-		    	font-size: 16px;
-			    font-weight: 900;
-			    text-transform: uppercase;
-		    }
-
-		    .submenu-list{
-	    	    li{
-	    	    	a{
-	    	    		color: #3c3c3c;
-	    	    		text-transform: capitalize;
-	    	    	}
-	    	    }
-		    }
-		}
-	}
 
     .fixed-nav{
     	position: fixed;
@@ -419,12 +448,25 @@ a:hover, a:visited, a:focus {
 	    z-index: 30;
 
  		.mainnav-wrapper{
- 			.large-dropdown{
- 				.large-dropdown-menu {
-			    	top: 39px;
+ 			.mega-dropdown{
+ 				.mega-dropdown-content{
+			    	top: 80px;
 				}
+
+				&:hover{
+					.mega-dropdown-content{
+						top: 50px;
+						@include transition(all,.6s,ease);
+					}
+	    	    }
  			}
  		}
+
+ 		.icons{
+    		opacity: 1;
+    		visibility: visible;
+    		@include transition(all,.6s,ease);
+    	}
     }
 }
 

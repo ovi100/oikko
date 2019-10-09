@@ -8,6 +8,14 @@
 
 $(document).ready(function() {
 
+  $(window).scroll(function(){
+      if ($(this).scrollTop()>150){
+        $('.main-nav').addClass('fixed-nav');
+      } 
+      else {
+        $('.main-nav').removeClass('fixed-nav');
+      }
+    });
 
   $('.body').on('shown.bs.collapse', function () {
     $(this).parent().find('.fa-angle-down')
