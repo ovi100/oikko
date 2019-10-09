@@ -425,6 +425,17 @@ a:hover, a:visited, a:focus {
     					font-size: 20px;
     					padding-right: 0;
     				}
+    				span{
+    					position: absolute;
+					    width: 18px;
+					    height: 18px;
+					    background: $brand-color;
+					    border-radius: 50%;
+					    color: #fff;
+					    font-size: 11px;
+					    line-height: 18px;
+					    text-align: center;
+    				}
     			}
 
     			li:last-child{border-right: 1px solid #ddd;}
@@ -527,78 +538,44 @@ a:hover, a:visited, a:focus {
     }
 }
 
-.long-footer{
-	background: $wcolor;
-	padding: 10px 0;
-	
-	.footer-style{
-	    border-bottom: 1px solid $brand-color;
-	    width: 10%;
-	    margin-top: -7px;
-	}
-	h5{
-		text-transform: capitalize;
-		padding-bottom: 10px;
-	}
-
-	ul{
-
-		li{
-			padding: 3px 0;
-
-			a{
-				color: #2F4858;
-				font-size: 13px;
-				margin-left: 0;
+.custom-page{
+	.page-box{
+		margin-bottom: 30px;
+		.text{
+			h3{
+				text-align: center;
 				text-transform: capitalize;
-
-				&:hover{
-					color: $brand-color;
-					@include transition(all,0.6s,ease);
-				}
+				a{color: $bcolor;}
 			}
 		}
 	}
-
-	.social{
-		margin-top:10px;
-
-		ul{
-			li{
-				a{
-					font-size: 25px;
-					padding:20px;
-				}
-			}
-		}
-	}
-
-	.download-app{margin-top:10px;}
-
 }
 
 footer{
-	background:#2F4858;
+	background:#3c3c3c;
 	color: $wcolor;
 	padding: 10px 0;
 
-	.delivery-place{
-		h5{text-transform: capitalize;}
-
-		a{
-			color: $wcolor;
-			&:not(:last-child):after{content: " | ";}
+	ul{
+		text-align: center;
+		li{
+			display: inline-block;
+			margin-right: 20px;
+			
+			a{
+				color: $wcolor;
+				text-transform: capitalize;
+			}
 		}
 	}
 
-	p{
-		margin-top: 40px;
-	    text-align: center;
-	}
-
-	a{
-		color: $wcolor;
-		&:hover{color:$brand-color;}
+	.social-media-icon{
+		padding: 25px 0;
+		ul{
+			li{				
+				a{font-size: 25px;}
+			}
+		}
 	}
 }
 
