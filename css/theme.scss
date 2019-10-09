@@ -516,6 +516,17 @@ a:hover, a:visited, a:focus {
     }
 }
 
+.counter{
+	background: url(../images/counter-bg.jpg) no-repeat fixed;
+    background-size: cover;
+    padding: 5% 0;
+
+    .counter-box{
+    	text-align: center;
+    	h2,h4{color: $wcolor;}
+    }
+}
+
 .long-footer{
 	background: $wcolor;
 	padding: 10px 0;

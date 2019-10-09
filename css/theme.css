@@ -394,6 +394,15 @@ a:hover, a:visited, a:focus {
   .about-us .section-header .header-style {
     border-bottom: 2px solid #fff; }
 
+.counter {
+  background: url(../images/counter-bg.jpg) no-repeat fixed;
+  background-size: cover;
+  padding: 5% 0; }
+  .counter .counter-box {
+    text-align: center; }
+    .counter .counter-box h2, .counter .counter-box h4 {
+      color: #fff; }
+
 .long-footer {
   background: #fff;
   padding: 10px 0; }
