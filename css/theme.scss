@@ -83,21 +83,29 @@ a:hover, a:visited, a:focus {
 	}
 }
 
-.section-padding{padding: 4% 0;}
+.section-padding{padding: 3% 0;}
 
 .section-header{
+	width: 30%;
+    margin: 0 auto;
+    margin-bottom: 80px;
 	text-align:center;
-	text-transform: capitalize;
 
 	h2{
-		color: #2F4858;
+		color: #000;
     	font-size: 28px;
+    	font-style: italic;
 	}
 
 	.header-style{
-	    border-bottom: 1px solid $brand-color;
-	    width: 7%;
+	    border-bottom: 2px solid $brand-color;
+	    width: 5%;
 	    margin: 0 auto;
+	}
+
+	p{
+		color: #000;
+		margin-top: 10px;
 	}
 }
 
@@ -474,6 +482,38 @@ a:hover, a:visited, a:focus {
 	}
 
 	.next{right: 0;}
+}
+
+.home-category{
+	.category-container{
+		.category-box{
+			margin-bottom: 30px;
+
+			.text{
+				position: relative;
+			    bottom: 60px;
+			    width: 50%;
+			    background: $brand-color;
+			    color: $wcolor;
+			    margin: 0 auto;
+			    margin-bottom: -35px;
+			    padding: 10px;
+			    text-align: center;
+			    text-transform: capitalize;
+			}
+		}
+	}
+}
+
+.about-us{
+	background: url(../images/bg.jpg) no-repeat fixed;
+    background-size: cover;
+    padding: 15% 0;
+
+    .section-header{
+    	h2,p{color: $wcolor;}
+    	.header-style{border-bottom: 2px solid $wcolor;}
+    }
 }
 
 .long-footer{

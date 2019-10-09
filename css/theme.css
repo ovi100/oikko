@@ -52,18 +52,24 @@ a:hover, a:visited, a:focus {
     transition: all 0.3s ease-in; }
 
 .section-padding {
-  padding: 4% 0; }
+  padding: 3% 0; }
 
 .section-header {
-  text-align: center;
-  text-transform: capitalize; }
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  text-align: center; }
   .section-header h2 {
-    color: #2F4858;
-    font-size: 28px; }
+    color: #000;
+    font-size: 28px;
+    font-style: italic; }
   .section-header .header-style {
-    border-bottom: 1px solid #113745;
-    width: 7%;
+    border-bottom: 2px solid #113745;
+    width: 5%;
     margin: 0 auto; }
+  .section-header p {
+    color: #000;
+    margin-top: 10px; }
 
 .section-content {
   max-width: 990px;
@@ -364,6 +370,29 @@ a:hover, a:visited, a:focus {
     visibility: visible; }
   #homeslider .next {
     right: 0; }
+
+.home-category .category-container .category-box {
+  margin-bottom: 30px; }
+  .home-category .category-container .category-box .text {
+    position: relative;
+    bottom: 60px;
+    width: 50%;
+    background: #113745;
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: -35px;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize; }
+
+.about-us {
+  background: url(../images/bg.jpg) no-repeat fixed;
+  background-size: cover;
+  padding: 15% 0; }
+  .about-us .section-header h2, .about-us .section-header p {
+    color: #fff; }
+  .about-us .section-header .header-style {
+    border-bottom: 2px solid #fff; }
 
 .long-footer {
   background: #fff;
