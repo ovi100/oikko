@@ -20,6 +20,59 @@
 
 	<!-- Start Project Code  -->
 
+	<!-- Start Mobile Side Menu -->
+	<div id="menu-sidenav" class="menu-sidenav">
+		<div class="sidenav-menu-link">
+			<ul>
+				<li><a href="">home</a></li>
+				<li><a href="">woman</a></li>
+				<li>
+					<a data-toggle="collapse" href="#second-category">
+						men <span class="icofont-thin-right rotate-icon"></span>
+					</a>
+					<div id="second-category" class="collapse">
+						<ul>
+							<li>
+								<a data-toggle="collapse" href="#third-category">
+									t-shirt <span class="icofont-thin-right rotate-icon"></span>
+								</a>
+								<div id="third-category" class="collapse">
+									<ul>
+										<li><a href="#">normal shirt</a></li>
+										<li><a href="#">formal shirt</a></li>
+										<li><a href="#">polo shirt</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">pant's</a></li>
+							<li><a href="#">shoe</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""><i class="icofont-grocery"></i> my cart</a></li>
+				<li><a href=""><i class="icofont-check-circled"></i> checkout</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="sidenav-menu-account">
+			<ul>
+				<li><a href="#">Terms and Condition</a></li>
+				<li><a href="#"><i class="icofont-group-students"></i> Register</a></li>
+				<li><a href="#"><i class="icofont-login"></i> Login</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="sidenav-menu-social">
+			<ul>
+				<li><a href=""><i class="icofont-twitter"></i></a></li>
+				<li><a href=""><i class="icofont-facebook"></i></a></li>
+				<li><a href=""><i class="icofont-instagram"></i></a></li>
+				<li><a href=""><i class="icofont-youtube-play"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End Mobile Side Menu -->
+
 	<!-- Start Header Section -->
 	<div class="header" id="header">
 		<div class="top-nav">
@@ -35,13 +88,14 @@
 		<div class="action-bar">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<div class="col-xs-3 col-sm-4 hidden-md">
 						<div class="sidenav">
-							<a onclick="openmenuSidenav()">
-				    			<i class="fa fa-bars"></i>
+							<a id="mobile-menu">
+				    			<i class="icofont-navigation-menu"></i>
 				    		</a>
 						</div>
-
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5">
 						<div class="logo">
 							<a href="">
 								<img class="img-responsive" src="images/oikko-logo.png" alt="Logo">
@@ -49,7 +103,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+					<div class="col-lg-7 col-md-7 hidden-sm hidden-xs">
 						<div class="searchbox">
 							<div class="input-group">
 								<div class="input-group-addon">
@@ -65,9 +119,15 @@
 						</div>
 					</div>
 
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-9">
+					<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 						<div class="action-icon">
 							<ul>
+								<li class="hidden-md">
+									<div class="cart-icon">
+										<a data-toggle="collapse" href="#msearchbox"><i class="icofont-search-1"></i></a>
+									</div>
+									
+								</li>
 								<li>
 									<div class="cart-icon">
 										<a href=""><i class="icofont-cart-alt"></i></a>
@@ -79,10 +139,18 @@
 						</div>
 					</div>
 				</div>
+				<div id="msearchbox" class="collapse">
+			        <div class="input-group">
+						<input type="text" class="form-control" placeholder="Search for anything.......">
+						<div class="input-group-addon">
+							<button type="submit"><i class="icofont-search-1"></i></button>
+						</div>
+					</div>
+		      	</div>
 			</div>
 		</div>
 		
-		<div class="main-nav">
+		<div class="main-nav hidden-sm hidden-xs">
 			<div class="mainnav-wrapper">
 				<ul>
 					<li class="mega-dropdown">
@@ -361,25 +429,25 @@
     <section class="counter section-padding">
 		<div class="container-fluid">
 	        <div class="row">
-	          <div class="col-md-3 col-sm-6 col-xs-12">
+	          <div class="col-md-3 col-sm-3 col-xs-12">
 	            <div class="counter-box">
 	              <h2><span class="count">150</span></h2>
 	              <h4>counter text 1</h4>
 	            </div>
 	          </div>
-	          <div class="col-md-3 col-sm-6 col-xs-12">
+	          <div class="col-md-3 col-sm-3 col-xs-12">
 	            <div class="counter-box">
 	              <h2><span class="count">1500</span></h2>
 	              <h4>counter text 2</h4>
 	            </div>
 	          </div>
-	          <div class="col-md-3 col-sm-6 col-xs-12">
+	          <div class="col-md-3 col-sm-3 col-xs-12">
 	            <div class="counter-box">
 	              <h2><span class="count">6000</span></h2>
 	              <h4>counter text 3</h4>
 	            </div>
 	          </div>
-	          <div class="col-md-3 col-sm-6 col-xs-12">
+	          <div class="col-md-3 col-sm-3 col-xs-12">
 	            <div class="counter-box">
 	              <h2><span class="count">500</span></h2>
 	              <h4>counter text 4</h4>

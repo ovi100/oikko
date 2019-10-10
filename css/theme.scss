@@ -119,43 +119,35 @@ a:hover, a:visited, a:focus {
 // CSS For Top Navbar
 
 .menu-sidenav {
-    background: #eee;
-    width: 0;
+	position: fixed;
+	top: 72px;
+    left: -280px;
     height: 100%;
-    position: fixed;
+    width: 275px;
+    background: #eee;
     overflow-x: hidden;
-    top: 0;
-    left: 0;
     z-index: 55;
     @include transition(all,.4s,ease);
-
-    .closebtn {
-	    position: absolute;
-	    top: -5px;
-	    right: 20px;
-	    color: $bcolor;
-	    font-size: 36px;
-	    margin-left: 50px;
-	}
 
     .sidenav-menu-link{
 	    padding-top: 30px;
 	    padding-left: 20px;
 	    padding-right: 20px;
 
-	    ul li{margin-bottom: 25px;}
+	    ul li{margin-bottom: 20px;}
 
 	    a{
 	    	color: $bcolor;
 	    	text-transform: capitalize;
 	    	@include transition(all,.4s,ease);
 
-	    	&:hover{color: #757575;}
+	    	&:hover{color: $brand-color;}
 
 	    	span{
+	    		color: $bcolor;
 	    		float: right;
 				font-size: 20px;
-				color: #000;
+				font-weight: 600;
 				line-height: 16px;
 				text-align: center;
 	    	}
@@ -204,6 +196,11 @@ a:hover, a:visited, a:focus {
 	    	&:hover{color: #757575;}
 	    }
 	}
+}
+
+.show-sidemenu{
+	left: 0 !important;
+	@include transition(all,.4s,ease);
 }
 
 .header{
@@ -287,6 +284,7 @@ a:hover, a:visited, a:focus {
 			
 			ul{
 				li{
+					display: inline-block;
 					.cart-icon{
 						width: 70px;
 					    height: 45px;
@@ -319,6 +317,30 @@ a:hover, a:visited, a:focus {
 
 			    li a{font-size: 15px;}
 			}
+		}
+
+		#msearchbox{
+			margin-top: 25px;
+
+			.input-group{
+
+	    		.form-control{
+	    			height: 45px;
+	    			border-right: 0;
+	    			box-shadow: none;
+	    		}
+
+	    		.input-group-addon{
+	    			background: transparent;
+		    		button{
+		    			background: transparent;
+		    			border: 0;
+		    			color: $bcolor;
+					    font-size: 20px;
+					    padding: 0 10px;
+		    		}
+		    	}
+	    	}
 		}
     }
 
